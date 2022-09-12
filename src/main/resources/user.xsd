@@ -6,6 +6,7 @@
 
     <element name="userRequest" type="userns:UserRequest"></element>
     <element name="userResponse" type="userns:UserResponse"></element>
+    <element name="Person" type="userns:Person"></element>
 
     <complexType name="UserRequest">
         <sequence>
@@ -20,6 +21,14 @@
             <element name="name" type="string" />
             <element name="gender" type="string" />
             <element name="created" type="dateTime" />
+        </sequence>
+    </complexType>
+
+    <complexType name="Person">
+        <sequence>
+            <element name="id" type="int"/>
+            <element name="name" type="string"/>
+            <element name="birthDay" type="dateTime"/>
         </sequence>
     </complexType>
 </schema>
